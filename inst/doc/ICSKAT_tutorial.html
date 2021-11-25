@@ -13,7 +13,7 @@
 
 <meta name="author" content="Ryan Sun" />
 
-<meta name="date" content="2021-03-02" />
+<meta name="date" content="2021-11-24" />
 
 <title>ICSKAT Tutorial</title>
 
@@ -304,7 +304,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">ICSKAT Tutorial</h1>
 <h4 class="author">Ryan Sun</h4>
-<h4 class="date">2021-03-02</h4>
+<h4 class="date">2021-11-24</h4>
 
 
 
@@ -385,7 +385,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <pre><code>## [1] 0.256489</code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># perform the ICSKATO test</span></a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">ICSKATO</span>(<span class="dt">icskatOut =</span> icskatOut)<span class="op">$</span>pval</a></code></pre></div>
-<pre><code>## [1] 0.4500598</code></pre>
+<pre><code>## [1] 0.4500931</code></pre>
 <p>If we want to test another SNP set (e.g. another gene), we don’t need to run the make_IC_dmat or ICSKAT_fit_null functions again. Just run ICskat() on the new genotype matrix.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="co"># another gene with 100 SNPs in it</span></a>
 <a class="sourceLine" id="cb7-2" data-line-number="2">gMat2 &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dt">data=</span><span class="kw">rbinom</span>(<span class="dt">n=</span>n<span class="op">*</span><span class="dv">100</span>, <span class="dt">size=</span><span class="dv">2</span>, <span class="dt">prob=</span><span class="fl">0.3</span>), <span class="dt">nrow=</span>n)</a>
@@ -400,7 +400,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <pre><code>## [1] 0.4946116</code></pre>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="co"># perform the ICSKATO test</span></a>
 <a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw">ICSKATO</span>(<span class="dt">icskatOut =</span> icskatOut2)<span class="op">$</span>pval</a></code></pre></div>
-<pre><code>## [1] 0.782592</code></pre>
+<pre><code>## [1] 0.7827799</code></pre>
 <p>Questions or novel applications? Please let me know! Contact information can be found in the package description.</p>
 </div>
 
